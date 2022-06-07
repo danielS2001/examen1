@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cálculos del rectángulo"
+            android:textSize="20dp"
+            android:gravity="center"></TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNombre"
+            android:hint="Escribe aquí el nombre"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBase"
+            android:hint="Escriba la base del rectángulo"
+            android:inputType="numberDecimal"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAltura"
+            android:hint="Escriba la altura del rectángulo"
+            android:inputType="numberDecimal"></EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Limpiar"></Button>
+
+            <Button
+                android:id="@+id/btnSiguiente"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Siguiente"></Button>
+
+            <Button
+                android:id="@+id/btnSalir"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Salir"></Button>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
